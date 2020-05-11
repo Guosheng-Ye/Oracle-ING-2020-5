@@ -801,7 +801,6 @@ SQL> desc v$log;//显示重做日志文件
     -   在一个数据库中，每一个角色名必须唯一。角色名与用户不同，角色不包含在任何模式中，所以建立角色的用户被删除时不影响该角色
 -   >**创建角色**
     -   ```|CREATE ROLE role_name [NOT IDENTIFIED | IDENTIFIED BY password];```
-        -   
 -   >**为角色授予权限**
     -   ```GRANT SELECT,UPDATE,INSERT,DELETE ON emp TO emp_manager;///向角色emp_manager授予scott.emp表上的select、update、insert、delete对象权限```
     -   ```CREATE USER emp_user INDENTIFIED BY user_password;```
